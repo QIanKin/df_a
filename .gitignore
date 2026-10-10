@@ -1,0 +1,22 @@
+# 编译与二进制输出
+build/
+bin/
+lib/
+devel/
+install/
+
+# 日志与缓存
+log/
+logs/
+*.log
+.cache/
+
+# IDE 与编辑器配置
+.vscode/
+.idea/
+*.swp
+*~
+
+# Python 编译缓存 (如有涉及)
+__pycache__/
+*.pyc

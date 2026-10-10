@@ -1,0 +1,6 @@
+# 仿真和真机共用的规划器选择；修改后重启 roslaunch，无需重新编译。
+# minco: 原始优化器；mocha: MOCHA 3D NMC 优化器。
+# cost、权重及运动限制继续使用 launch/include/advanced_param_sim.xml
+# 或 advanced_param_exp.xml 中对应环境的原有参数。
+manager:
+  trajectory_optimizer: mocha
