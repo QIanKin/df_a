@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+# Container-only defaults. The robot's catkin_make and repository are unchanged.
+set -e
+source /opt/ros/noetic/setup.bash
+sim_packages='quadrotor_msgs;uav_utils;pose_utils;plan_env;path_searching;traj_utils;traj_opt;diff_planner;poscmd_2_odom;map_generator;local_sensing_node;odom_visualization;rviz_plugins;selected_points_publisher;manual_take_over;multipoint'
+exec /opt/ros/noetic/bin/catkin_make \
+    -j"${DF_BUILD_JOBS:-2}" -l"${DF_BUILD_JOBS:-2}" \
+    -DCMAKE_BUILD_TYPE=Release \
+    -DEIGEN3_INCLUDE_DIR=/usr/include/eigen3 \
+    "-DCATKIN_WHITELIST_PACKAGES=$sim_packages" "$@"

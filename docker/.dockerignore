@@ -1,0 +1,4 @@
+*
+!Dockerfile
+!catkin_make
+!shell-init.sh

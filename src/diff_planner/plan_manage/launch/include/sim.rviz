@@ -270,7 +270,7 @@ Visualization Manager:
           Displays:
             - Class: rviz/Marker
               Enabled: true
-              Marker Topic: /drone_0_ego_planner_node/goal_point
+              Marker Topic: /drone_0_diff_planner_node/goal_point
               Name: goal_point
               Namespaces:
                 {}
@@ -278,7 +278,7 @@ Visualization Manager:
               Value: true
             - Class: rviz/Marker
               Enabled: true
-              Marker Topic: /drone_0_ego_planner_node/global_list
+              Marker Topic: /drone_0_diff_planner_node/global_list
               Name: global_path
               Namespaces:
                 {}
@@ -286,7 +286,7 @@ Visualization Manager:
               Value: true
             - Class: rviz/Marker
               Enabled: true
-              Marker Topic: /drone_0_ego_planner_node/optimal_list
+              Marker Topic: /drone_0_diff_planner_node/optimal_list
               Name: optimal_traj
               Namespaces:
                 {}
@@ -294,7 +294,7 @@ Visualization Manager:
               Value: true
             - Class: rviz/Marker
               Enabled: false
-              Marker Topic: /drone_0_ego_planner_node/failed_list
+              Marker Topic: /drone_0_diff_planner_node/failed_list
               Name: FailedList
               Namespaces:
                 {}
@@ -302,7 +302,7 @@ Visualization Manager:
               Value: false
             - Class: rviz/Marker
               Enabled: false
-              Marker Topic: /ego_planner_node/a_star_list
+              Marker Topic: /drone_0_diff_planner_node/a_star_list
               Name: AStar
               Namespaces:
                 {}
@@ -310,7 +310,7 @@ Visualization Manager:
               Value: false
             - Class: rviz/Marker
               Enabled: false
-              Marker Topic: /drone_0_ego_planner_node/init_list
+              Marker Topic: /drone_0_diff_planner_node/init_list
               Name: InitTraj
               Namespaces:
                 {}
@@ -367,7 +367,7 @@ Visualization Manager:
               Size (Pixels): 3
               Size (m): 0.10000000149011612
               Style: Boxes
-              Topic: /drone_0_ego_planner_node/grid_map/occupancy_inflate
+              Topic: /drone_0_diff_planner_node/grid_map/occupancy_inflate
               Unreliable: false
               Use Fixed Frame: true
               Use rainbow: true
